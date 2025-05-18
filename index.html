@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadeem Zawaideh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1><span id="typewriter"></span></h1>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark Mode</button>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>Bachelor of Applied Computer Science @ Dalhousie University. I'm passionate about building smart, interactive web apps and learning how software can solve real-world problems.</p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <canvas id="skillsChart" width="400" height="400"></canvas>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Chess AI</h3>
+        <p>A Python-based chess engine with a GUI and an AI opponent using Negamax and Quiescence search.</p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+        <a href="https://github.com/Nadeem-Zawaideh/ChessAI" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Email Web App</h3>
+        <p>A secure messaging platform using Node.js and MySQL. Users can send, receive, and store emails with hashed login support.</p>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/MySQL-005C84?style=flat&logo=mysql&logoColor=white" />
+        <a href="https://github.com/Nadeem-Zawaideh/EmailWebApp" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>DalFit Planner</h3>
+        <p>Helps students plan group fitness activities around their availability. Preferences and availability stored via PHP and CSV.</p>
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
+        <a href="https://github.com/Nadeem-Zawaideh/DalfitPlanner" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>The GoalPost</h3>
+        <p>A sports web app using the SportsDB API. Lets users search for players and clubs and save favorites to localStorage.</p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
+        <a href="https://github.com/Nadeem-Zawaideh/TheGoalPost" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Hotel Booking App</h3>
+        <p>A Node.js application using CSV-based storage to simulate a hotel booking process with a responsive UI.</p>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" />
+        <a href="https://github.com/Nadeem-Zawaideh/HotelBookingApp" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+  <h2>Gallery</h2>
+
+  <h3>Chess AI</h3>
+  <div class="project-grid">
+    <div class="card">
+      <img src="images/chess-checkmate.png" alt="Chess AI Screenshot">
+      <p>Checkmate UI</p>
+    </div>
+  </div>
+
+  <h3>DalFit Planner</h3>
+  <div class="project-grid">
+    <div class="card">
+      <img src="images/dalfit-light.png" alt="DalFit Light Mode">
+      <p>Light Mode</p>
+    </div>
+    <div class="card">
+      <img src="images/dalfit-dark.png" alt="DalFit Dark Mode">
+      <p>Dark Mode</p>
+    </div>
+  </div>
+
+  <h3>Email Web App</h3>
+  <div class="project-grid">
+    <div class="card">
+      <img src="images/email-login.png" alt="Email Login">
+      <p>Login</p>
+    </div>
+    <div class="card">
+      <img src="images/email-inbox.png" alt="Email Inbox">
+      <p>Inbox</p>
+    </div>
+    <div class="card">
+      <img src="images/email-sent.png" alt="Email Sent">
+      <p>Sent</p>
+    </div>
+    <div class="card">
+      <img src="images/email-compose.png" alt="Email Compose">
+      <p>Compose</p>
+    </div>
+  </div>
+
+  <h3>The GoalPost</h3>
+  <div class="project-grid">
+    <div class="card">
+      <img src="images/goalpost.png" alt="The GoalPost">
+      <p>Main View</p>
+    </div>
+  </div>
+
+  <h3>Hotel Booking App</h3>
+  <div class="project-grid">
+    <div class="card">
+      <img src="images/hotel-search.png" alt="Hotel Search">
+      <p>Search Page</p>
+    </div>
+    <div class="card">
+      <img src="images/hotel-types.png" alt="Hotel Room Types">
+      <p>Room Types</p>
+    </div>
+    <div class="card">
+      <img src="images/hotel-results.png" alt="Hotel Results">
+      <p>Search Results</p>
+    </div>
+    <div class="card">
+      <img src="images/hotel-booking.png" alt="Hotel Booking Form">
+      <p>Booking Form</p>
+    </div>
+    <div class="card">
+      <img src="images/hotel-confirm.png" alt="Booking Confirmation">
+      <p>Confirmation</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 Nadeem Zawaideh — All rights reserved.
+  </footer>
+
+  <h2 id="typewriter" style="min-height: 2em;"></h2>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
