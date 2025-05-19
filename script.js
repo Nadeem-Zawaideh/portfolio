@@ -1,9 +1,9 @@
 function startTypewriter() {
   const phrases = [
-    "Nadeem Zawaideh | Portfolio",
-    "Computer Science Student @ Dal",
-    "Web Developer · Software Builder",
-    "I make cool things that work"
+    "Nadeem Zawaideh | Portfolio ",
+    "Computer Science Student @ Dal ",
+    "Web Developer · Software Designer ",
+    "I make cool things that work sometimes ",
   ];
 
   let i = 0;
