@@ -266,3 +266,16 @@ footer {
   margin: 0;
 }
 
+#typewriter-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#typewriter {
+  display: inline-block;
+  white-space: nowrap;
+}
+

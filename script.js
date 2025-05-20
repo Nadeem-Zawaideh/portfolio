@@ -3,7 +3,8 @@ function startTypewriter() {
     "Nadeem Zawaideh | Portfolio ",
     "Computer Science Student @ Dal ",
     "Web Developer · Software Designer ",
-    "I make cool things that work sometimes ",
+    "I make cool things that work ",
+    "... Sometimes ",
   ];
 
   let i = 0;
@@ -47,6 +48,20 @@ function startTypewriter() {
 
     setTimeout(loop, typingSpeed);
   }
+
+  const longestPhrase = phrases.reduce((a, b) => (a.length > b.length ? a : b));
+
+  const dummy = document.createElement("span");
+  dummy.style.visibility = "hidden";
+  dummy.style.position = "absolute";
+  dummy.style.whiteSpace = "nowrap";
+  dummy.style.fontSize = window.getComputedStyle(element).fontSize;
+  dummy.style.fontFamily = window.getComputedStyle(element).fontFamily;
+  dummy.innerText = longestPhrase;
+
+  document.body.appendChild(dummy);
+  document.getElementById("typewriter-container").style.height = dummy.offsetHeight + "px";
+  document.body.removeChild(dummy);
 
   loop();
 }
