@@ -4,7 +4,7 @@ function startTypewriter() {
     "Computer Science Student @ Dal ",
     "Web Developer · Software Designer ",
     "I make cool things that work ",
-    "... Sometimes ",
+    "... sometimes ",
   ];
 
   let i = 0;
