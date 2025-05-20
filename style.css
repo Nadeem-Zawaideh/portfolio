@@ -267,6 +267,7 @@ footer {
 }
 
 #typewriter-container {
+  min-height: 4.5em;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -276,6 +277,6 @@ footer {
 
 #typewriter {
   display: inline-block;
-  white-space: nowrap;
+  white-space: normal;
 }
 

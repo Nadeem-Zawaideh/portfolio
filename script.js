@@ -54,7 +54,7 @@ function startTypewriter() {
   const dummy = document.createElement("span");
   dummy.style.visibility = "hidden";
   dummy.style.position = "absolute";
-  dummy.style.whiteSpace = "nowrap";
+  dummy.style.whiteSpace = "normal";
   dummy.style.fontSize = window.getComputedStyle(element).fontSize;
   dummy.style.fontFamily = window.getComputedStyle(element).fontFamily;
   dummy.innerText = longestPhrase;
