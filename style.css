@@ -233,9 +233,36 @@ footer {
   border: 2px solid var(--accent);
 }
 
-.award-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  padding: 0 1rem;
-  color: var(--text-color);
+.quote-box {
+  border-left: 6px solid #00bcd4;
+  background: #f0faff;
+  padding: 20px;
+  margin: 20px auto;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  max-width: 700px;
+  position: relative;
+  border-radius: 8px;
+  color: #005b69;
 }
+
+.quote-box::before {
+  content: "“";
+  font-size: 4em;
+  color: #00bcd4;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.quote-text {
+  margin: 0 0 10px 0;
+}
+
+.quote-attribution {
+  text-align: right;
+  font-weight: bold;
+  color: #007a88;
+  margin: 0;
+}
+
